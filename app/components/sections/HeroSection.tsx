@@ -1,5 +1,6 @@
 import { ArrowLeft, ArrowRight, ArrowUpRight, Play, Share } from "lucide-react";
 import React from "react";
+import Rated from "../blocs/Rated";
 
 const HeroSection = () => {
   return (
@@ -40,22 +41,46 @@ const HeroSection = () => {
       </div>
       
       {/* Colonne de droite - Image et éléments visuels */}
-      <div className="relative h-full flex items-center justify-center">
-        {/* Image principale */}
-        <div className="relative z-10 w-full max-w-lg">
+     <div className="relative h-full flex items-center justify-center">
+  {/* Cercle en arrière-plan */}
+  <div className="absolute z-0 w-[450px] h-[450px] bg-gradient-to-br  to-[#edd604] blur-[100px] rounded-full"></div>
+
+  {/* Image principale */}
+  <div className="relative z-10 w-full max-w-lg ">
+    <img
+      src="/images/Adobe Express - file.png"
+      alt="Business solution illustration"
+      className="w-3xl h-3xl shadow-0"
+    />
+  </div>
+
+        
+    
+        {/* Badge d'évaluation avec étoiles */}
+        <div className="absolute top-135 -left-30 bg-yellow-400 backdrop-blur-sm px-4 py-3 rounded-xl shadow-lg flex items-center gap-3 z-20">
+          <div className="flex gap-1">
+            <div className="flex -space-x-3">
           <img
-            src="/images/image.png"
-            alt="Business solution illustration"
-            className="w-full h-auto rounded-2xl shadow-2xl"
+            src="/images/copyHerosection.png"
+            alt="User testimonial"
+            className="w-10 h-10 rounded-full border-2 border-white shadow"
+          />
+          <img
+            src="/images/a.jpg"
+            alt="User testimonial"
+            className="w-10 h-10 rounded-full border-2 border-white shadow"
+          />
+          <img
+            src="/images/c.jpg"
+            alt="User testimonial"
+            className="w-10 h-10 rounded-full border-2 border-white shadow"
+          />
+          <img
+            src="/images/d.jpg"
+            alt="User testimonial"
+            className="w-10 h-10 rounded-full border-2 border-white shadow"
           />
         </div>
-        
-        {/* Badge d'évaluation avec étoiles */}
-        <div className="absolute top-20 right-0 bg-white/90 backdrop-blur-sm px-4 py-3 rounded-xl shadow-lg flex items-center gap-3 z-20">
-          <div className="flex gap-1">
-            {[...Array(5)].map((_, i) => (
-              <span key={i} className="text-yellow-500">★</span>
-            ))}
           </div>
           <span className="font-semibold text-gray-700">4.9 Star</span>
         </div>
