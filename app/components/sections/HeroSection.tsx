@@ -1,6 +1,6 @@
 import { ArrowLeft, ArrowRight, ArrowUpRight, Play, Share } from "lucide-react";
 import React from "react";
-import Rated from "../blocs/Rated";
+
 
 const HeroSection = () => {
   return (
