@@ -82,7 +82,7 @@ const Testimonials = () => {
       <div className="text-center text-foreground mb-6 md:mb-4 font-semibold">
         <h2 className="text-xs md:text-sm">Testimonials</h2>
         <h1 className="text-xl md:text-2xl">
-          What Our Clients Say'<span className="text-amber-300">s</span>
+          What Our Clients Say <span className="text-amber-300">s</span>
         </h1>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
