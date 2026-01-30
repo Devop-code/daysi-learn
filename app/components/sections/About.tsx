@@ -1,4 +1,4 @@
-import { Sparkle, Star } from "lucide-react";
+import { Sparkle} from "lucide-react";
 import React from "react";
 
 const About = () => {
